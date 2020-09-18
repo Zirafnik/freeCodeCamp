@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet"> 
+
+    <head>
+        <style>
+            @media (max-width: 800px) {
+               
+            }
+                        
+            * {
+                margin: 0;
+   
+            }
+
+            #header {
+                
+                position: fixed;
+                width: 100%;
+                background-image: linear-gradient(45deg, #1ffc4f, rgb(255, 255, 255));
+                
+            }
+
+         
+            .div1 {
+                display: flex;
+                flex-direction: row;
+               
+                align-items: center;
+                height: 100px;
+
+                
+                width: 100%;
+                
+            }
+
+            #nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                
+                
+            }
+
+            .div0 {
+                padding-top: 3.5cm;
+                background:rgb(201, 253, 141)
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .div2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            #video {
+                padding: 1cm;
+            }
+
+            .div3 {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 1cm;
+            }
+            .box {
+                width: 200px;
+                height: 300px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: black;
+                border-radius: 25px;
+                box-shadow: 0 10px 20px gray;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            
+
+                text-align:justify;
+
+                padding: 15px;
+
+                background-size: 100% 100%;  
+                background-repeat: no-repeat;
+
+            
+                
+
+            }
+
+            .back-img1 {
+                background-image: url(https://d3fpcon17n0eur.cloudfront.net/lawn-mowing-guide-1.jpg);
+            }
+
+            .back-img2 {
+                background-image: url(https://s3.amazonaws.com/greenpal-production/posts/header_images/000/000/139/original/Image_1.jpg?1570548614);
+            }
+
+            .back-img3 {
+                background-image: url(https://lda.lowes.com/is/image/Lowes/ht_how-to-cut-down-a-tree-inline-first-cut);
+
+                
+            }
+            
+            .p{
+                color:white;
+            }
+           
+            h1 {
+                font-family: 'Cantora One', sans-serif;
+            }
+
+            h2, h3 {
+                color: rgb(153, 255, 0);
+            }
+
+            #howitworks {
+                width: 600px;
+                text-align: justify;
+                padding-top: 1cm
+            }
+
+            footer {
+                height: 50px;
+                background-image: linear-gradient(45deg, #1ffc4f, rgb(255, 255, 255));
+                
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            #email {
+                width: 300px;
+            }
+         
+        </style>
+    </head>
+
+    <body id=image>
+        <header id=header>
+            <div class=div1>
+            <a href=#image><img id=header-img src="logo-landscape.png"></a>
+
+            <nav id=nav-bar>
+                    <a class=nav-link href=#how-header>How It Works</a>
+                    <a class=nav-link href=#video>Skills</a>
+                    <a class=nav-link href=#pricing-header>Pricing</a>
+                    <a class=nav-link href=#form>Contact</a>
+                
+            </nav>
+            </div>
+        </header>
+
+
+        <div class=div0>
+        <div class=div2 id=how-header>
+
+        <h1>Grass is greener on our side.</h1>
+
+        <P id=howitworks>With our top of the line equipment we will transform your yard, into one even your neighbors' will envy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </P>
+
+       
+        <iframe id=video width="560" height="315" src="https://www.youtube.com/embed/lIe0RyDPYOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+
+
+            <form id=form action=https://www.freecodecamp.org/email-submit>
+                <input name=email id=email type="email" placeholder="Enter your email address">
+
+                <input id=submit type="submit" value="Get started">
+            </form>
+        </div>
+
+        <div id=pricing-header class=div3>
+            <div class='box back-img1'>
+                <h3>Lawn mowing</h3>
+                <h2>$100/area</h2>
+                <p class=p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum a arcu cursus vitae congue mauris rhoncus. Massa ultricies mi quis hendrerit dolor magna eget est lorem.</p>
+                <button type=submit>Select</button>
+            </div>
+
+            <div class='box back-img2'>
+                <h3>Shrub trimming</h3>
+                <h2>$150/length</h2>
+                <p class=p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum a arcu cursus vitae congue mauris rhoncus.</p>
+                <button type=submit>Select</button>
+            </div>
+
+            <div class='box back-img3'>
+                <h3>Tree cutting</h3>
+                <h2>$400/tree</h2>
+                <p class=p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum a arcu cursus vitae congue mauris rhoncus. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                <button type=submit>Select</button>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            <p style=padding-top:0.4cm>Copyright 2020, Landscaping company</p>
+        </footer>
+    </body>
+</html>

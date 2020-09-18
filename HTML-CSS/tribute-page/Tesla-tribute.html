@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main id=main>
+        <head>
+            <title id=title>Nikola Tesla</title>
+
+            <style>
+               
+                .div1 {
+                    text-align: center;
+                    background-color: rgba(109, 109, 109, 0.3);
+                    padding: 0.5cm;
+                }
+
+                #img-div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0.5cm;
+                }
+
+                #image {
+                    object-fit: cover;
+                    height: auto;
+                    max-width: 80%;
+                    width: 600px;
+                }
+
+                #tribute-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color:rgba(109, 109, 109, 0.3);
+                    padding-top: 0.3cm;
+                    
+                }
+
+                .textstyle {
+                    text-align: justify;
+                    width: 700px;
+                }
+
+                #img-caption {
+                    padding-top:0.3cm;
+                }
+
+            </style>
+        </head>
+        <body>
+            <div class=div1>
+                <h1>Nikola Tesla</h1>
+
+                <p>An inventor, electrical engineer, mechanical engineer, and a futurist.</p>
+            </div>
+            
+            <div id=img-div>
+                <img id=image src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/800px-N.Tesla.JPG>
+                <p id=img-caption>Born and raised in the Austrian Empire, Tesla studied engineering and physics in the 1870s without receiving a degree.</p>
+            </div>
+
+            <div id=tribute-info>
+                <h3>Tesla's life:</h3>
+                <p class="textstyle">Born and raised in the Austrian Empire, Tesla studied engineering and physics in the 1870s without receiving a degree, and gained practical experience in the early 1880s working in telephony and at Continental Edison in the new electric power industry. In 1884 he emigrated to the United States, where he became a naturalized citizen. He worked for a short time at the Edison Machine Works in New York City before he struck out on his own. With the help of partners to finance and market his ideas, Tesla set up laboratories and companies in New York to develop a range of electrical and mechanical devices. His alternating current (AC) induction motor and related polyphase AC patents, licensed by Westinghouse Electric in 1888, earned him a considerable amount of money and became the cornerstone of the polyphase system which that company eventually marketed.</p>
+
+                <p class=textstyle><em>"The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence." Nikola Tesla</em></p>
+
+                <p>Read more about Nikola Tesla on <a id=tribute-link target=_blank href=https://en.wikipedia.org/wiki/Nikola_Tesla>Wikipedia</a>.</p>
+
+            </div>
+        </body>
+    </main>
+</html>

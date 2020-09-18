@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class=bg>
+
+    <script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+        <style>
+            body, html{
+                height: 100%;
+                width: 100%;
+                
+                /*background: linear-gradient(0deg, rgba(152, 209, 152, 0.2), rgba(152, 209, 152, 0.2)); */
+
+                /*https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image/36679903*/
+                
+                
+            }
+
+            .bg{
+                background-image: url(https://i.pinimg.com/originals/ea/8a/fe/ea8afe0dcb60237d9bdbddf9b4cf40cd.png);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                
+                
+            }
+
+            .div1 {
+               text-align: center;
+               background: linear-gradient(0deg, rgba(152, 209, 152, 0.2), rgba(152, 209, 152, 0.5));
+               padding: 0.1cm;
+               
+            }
+
+            .font {
+                font-family: 'Press Start 2P', cursive;
+            }
+
+            #survey-form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1cm;
+
+                border-style: solid;
+                border-color: black; 
+                border-width: 3px;
+                box-shadow: 0 10px 20px gray;
+
+                background: linear-gradient(0deg, rgba(152, 209, 152, 0.7), rgba(152, 209, 152, 0.6));
+
+                
+            }
+
+            .div2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+        
+            }
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 30px;
+                
+            }
+
+            #submit {
+                width: 80px;
+                height: 40px;
+                font-family: 'Press Start 2P', cursive;
+                
+                font-size: 60%;
+                
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class=div1>
+            <h1 class=font id=title>Best pokemon</h1>
+
+            <p class=font id=description>What pokemon is the best?</p>
+        </div>
+        
+        <div class=div2>
+           
+            <form id=survey-form>
+                
+                <label id=name-label>Your name
+                    <input id=name type=text placeholder='Name' required>
+                </label>
+
+                <label id=email-label>Your email
+                    <input id=email type=email placeholder='Email address' required>
+                </label>
+
+                <label id=number-label>Your age
+                    <input id=number type="number" placeholder='Age' min=0 max=110>
+                </label>
+
+                <label style=padding:30px><strong>Best starter pokemon type?</strong>
+                    <select id=dropdown>
+                        <option value=fire>Fire</option>
+                        <option value=water>Water</option>
+                        <option value=grass>Grass</option>
+                    </select>
+                </label>
+
+                <label class=column><strong>Best videogame generation?</strong>
+                    <input type=radio value=gen1 name=generation>Gen 1
+                    <input type=radio value=gen2
+                    name=generation>Gen 2
+                    <input type=radio value=gen3 name=generation>Gen 3
+                </label>
+
+                <label class=column><strong>What types did you have on your team?</strong>
+                    <input type=checkbox name=type value=normal>Normal
+                    <input type=checkbox name=type value=fire>Fire
+                    <input type=checkbox name=type value=water>Water
+                    <input type=checkbox name=type value=grass>Grass
+                    <input type=checkbox name=type value=electric>Electric
+                    <input type=checkbox name=type value=ice>Ice
+                    <input type=checkbox name=type value=fighting>Fighting 
+                    <input type=checkbox name=type value=poison>Poison 
+                    <input type=checkbox name=type value=ground>Ground 
+                    <input type=checkbox name=type value=flying>Flying
+                    <input type=checkbox name=type value=psychic>Psychic
+                    <input type=checkbox name=type value=bug>Bug 
+                    <input type=checkbox name=type value=rock>Rock 
+                    <input type=checkbox name=type value=ghost>Ghost 
+                    <input type=checkbox name=type value=dragon>Dragon
+                    <input type=checkbox name=type value=dark>Dark
+                    <input type=checkbox name=type value=steel>Steel 
+                    <input type=checkbox name=type value=fairy>Fairy
+                </label>
+
+                <label class=column><strong>Do you have any additional comments about which is best?</strong>
+                    <textarea rows=10 cols=50 placeholder='Additional comments...'></textarea>
+                </label>
+
+                <button id=submit type=submit>Submit</button>
+            </form>
+        
+        </div>
+        
+    </body>
+</html>
